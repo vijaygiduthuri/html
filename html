@@ -1,0 +1,110 @@
+<!DOCTYPE html
+<html>
+
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+
+    <div class="homepage-bg-container" id="sectionhomepage">
+        <div class="top-container">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/software-developer-img.png" class="homepage-image" />
+            <h1 class="homepage-heading">My Projects</h1>
+            <p class="homepage-paragraph">These are a few of my Static Website projects that I have developed using HTML, CSS and Bootstrap</p>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/advanced-technologies-img.png" class="homepage-image2" onclick​="display('sectionadvancedtechnology')">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diwali-img.png" class="homepage-image2" onclick​="display('sectiondiwalipage')" />
+        </div>
+
+
+        <div class="d-flex flex-row justify-content-center">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/food-img.png" class="homepage-image2" onclick​="display('sectionpizza')" />
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/news-paper-img.png
+" class="homepage-image2" onclick​="display('sectionnewspapersection')" />
+        </div>
+    </div>
+    <div id="sectionadvancedtechnology">
+        <div class="advancedtechnology d-flex flex-column justify-content-end">
+            <div class="advanced-technology-card">
+                <h1 class="advanced-heading">Advanced Technology</h1>
+                <p class="advanced-paragraph">Now the present generation the technology is more. The people are using the hign-eng Technology</p>
+                <button class="btn btn-primary">Learn more</button>
+                <button class="btn btn-light" onclick​="display('sectionhomepage')">back</button>
+            </div>
+        </div>
+    </div>
+    <div id="sectiondiwalipage">
+        <div class="diwali-bg-top-container">
+            <h1 class="diwali-heading">Celebrate <br />
+                Diwali with <br />
+                your friends</h1>
+        </div>
+        <div class="diwali-bottom-container">
+            <div class="d-flex flex-row justify-content-center">
+                <div class="diwali-white-card">
+                    <img src​="data:image/jpeg;base64,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" class="diwali-image-size" />
+                    <h1 class="diwali-lamp-heading">Diwali Lamp</h1>
+                    <h1 class="diwali-lamp-paragraph">Rs.369</h1>
+                </div>
+                <div class="diwali-white-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq-kpMZQvdDCubORw1WYl70E3sVQHUmwaH5Q&usqp=CAU=" class="diwali-image-size" />
+                    <h1 class="diwali-lamp-heading">Diya</h1>
+                    <h1 class="diwali-lamp-paragraph">Rs.59</h1>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+                <div class="diwali-white-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeqkXjjjQVRUzC5fAgKtIb-8QCYyANSnF-Dw&usqp=CAU=" class="diwali-image-size" />
+                    <h1 class="diwali-lamp-heading">Crackers</h1>
+                    <h1 class="diwali-lamp-paragraph">Rs.180</h1>
+                </div>
+                <div class="diwali-white-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUSKKIPlggCkHKvxwSYYdJ0196vj_EgfUkJg&usqp=CAU=" class="diwali-image-size" />
+                    <h1 class="diwali-lamp-heading">Fire works</h1>
+                    <h1 class="diwali-lamp-paragraph">Rs.268</h1>
+                </div>
+            </div>
+            <div class="button-diwali">
+                <button class="btn btn-primary" onclick​="display('sectionhomepage')">back</button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionnewspapersection">
+        <div class="advancedtechnology d-flex flex-column justify-content-end">
+            <div class="advanced-technology-card">
+                <h1 class="advanced-heading">News Paper</h1>
+                <p class="advanced-paragraph">Now a days News papers are playing such a crucial role for getting the information. we have many print media.</p>
+                <button class="btn btn-primary">Learn more</button>
+                <button class="btn btn-light" onclick​="display('sectionhomepage')">back</button>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="sectionpizza">
+        <div class="advancedtechnology d-flex flex-column justify-content-end">
+            <div class="advanced-technology-card">
+                <h1 class="advanced-heading">Happy Meals</h1>
+                <p class="advanced-paragraph">Pizza delivery huts are very fast in delivering the items. we want to get them within 15 to 20 minutes to get the delivery.</p>
+                <button class="btn btn-primary">Learn more</button>
+                <button class="btn btn-light" onclick​="display('sectionhomepage')">back</button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+
+</html>>
